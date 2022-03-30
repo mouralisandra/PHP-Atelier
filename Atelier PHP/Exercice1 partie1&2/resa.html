@@ -27,7 +27,7 @@
           ><input class="form-control" type="number" id="cin" /><label
             class="form-label"
             >Le nombre de Sandwichs:</label
-          ><input class="form-control" type="number" id="nombre required pattern="([1-9]|([1][0-9]))|20" /><label
+          ><input class="form-control" type="number" id="nombre" required pattern="([1-9]|([1][0-9]))|20" /><label
             class="form-label"
             >Votre adresse:</label
           >
@@ -36,10 +36,10 @@
             >Le type de votre Sandwich:</label
           >
        
-            <select name="type" size="3" required>
-            <option value="viande">Viande</option>
-            <option value="poulet">Poulet</option>
-            <option value="Escalope">Escalope</option>
+            <select class="form-check-input" name="type" size="3" required>
+            <option class="form-check-label" id= "viande" value="viande">Viande</option>
+            <option class="form-check-label" id="poulet" value="poulet">Poulet</option>
+            <option class="form-check-label" id="escalope" value="Escalope">Escalope</option>
           </select>
         
           <label class="form-label">Les ingrédients à ajouter:</label>
