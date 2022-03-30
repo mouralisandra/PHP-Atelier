@@ -36,38 +36,18 @@
             >Le type de votre Sandwich:</label
           >
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              id="formCheck-1"
-            /><label class="form-check-label" id="viande" for="viande"
-              >Viande</label
-            >
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              id="formCheck-3"
-            /><label class="form-check-label" id="poulet" for="poulet"
-              >Poulet</label
-            >
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              id="formCheck-2"
-            /><label class="form-check-label" id="escalope" for="escalope"
-              >Escalope</label
-            >
+            <select name="type" size="3" required>
+            <option value="viande">Viande</option>
+            <option value="poulet">Poulet</option>
+            <option value="Escalope">Escalope</option>
+          </select>
           </div>
           <label class="form-label">Les ingrédients à ajouter:</label>
                 <div class="form-check" id="salade">
-                    <input class="form-check-input" type="checkbox" id="salade" /><label class="form-check-label" for="salad">salade</label>
+                    <input class="form-check-input" type="checkbox" id="salade" /><label class="form-check-label" for="salade">salade</label>
                 </div>
                 <div class="form-check" id="mayonnaise">
-                    <input class="form-check-input" type="checkbox" id="formCheck-6" /><label class="form-check-label" for="formCheck-6">Mayonnaise</label
+                    <input class="form-check-input" type="checkbox" id="mayonnaise" /><label class="form-check-label" for="mayonnaise">Mayonnaise</label
             >
           </div>
           <div class="form-check">
@@ -75,13 +55,13 @@
               class="form-check-input"
               type="checkbox"
               id="formCheck-5"
-            /><label class="form-check-label" id="harissa" for="formCheck-5"
+            /><label class="form-check-label" id="harissa" for="harissa"
               >Harissa</label
             >
           </div>
           <div class="mb-3"></div>
           <div class="mb-3">
-            <button class="btn btn-primary d-block w-100" type="submit" onclick="myFunction()">
+            <button class="btn btn-primary d-block w-100" type="submit" name="submit" value"submit" onclick="myFunction()">
               Passer la Commande
             </button>
           </div>
