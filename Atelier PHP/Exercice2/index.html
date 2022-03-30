@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: var(--bs-purple);">
+    <section class="login-dark" style="background: var(--bs-purple);">
+
+        <form action="validation.php" method="post" style="width: 40%;">
+            <h2 class="visually-hidden">Login Form</h2>
+            <div class="illustration" style="background: url(&quot;assets/img/0d7f5d0b702b7e228f7151dbd46224d3.png&quot;);width: 100%;height: 100%;background-size: 100%;padding: 100px;"></div>
+            <h1>Le cours </h1>
+            <h1> <label for="title">PHP: </label>
+            </h1>
+            <div>
+                <fieldset>
+                    <legend>Votre avis compte:</legend>
+                    <div class="custom-control custom-radio"><input type="radio" id="bon" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Bon</label></div>
+                    <div class="custom-control custom-radio"><input type="radio" id="moyen" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Moyen</label></div>
+                    <div class="custom-control custom-radio"><input type="radio" id="mauvais" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Mauvais</label></div>
+                </fieldset>
+                <fieldset></fieldset>
+            </div>
+            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" value="Ajouter">Soumettre</button></div><a class="forgot" href="#">Le PHP, c'est dûr.</a>
+        </form>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <a href="index.php">Retour à vos notes.</a>
+
+    <?php
+    session_start();
+
+
+    ?>
+</body>
+
+</html>
