@@ -1,16 +1,16 @@
 <?php
-$id = uniqid();
-$nom = ucfirst($_GET["nom"]);
-$prenom = ucfirst($_GET["prenom"]);
-$cin = $_GET["cin"];
-$nombre = $_GET["nombre"];
-$adresse = $_GET["adresse"];
 $type = ucfirst($_GET["type"]);
 $avec_mayonnaise = isset($_GET["mayonnaise"]);
 $avec_salade = isset($_GET["salade"]);
 $avec_harissa = isset($_GET["harissa"]);
-$prix_total = $nombre * 4;
+$id = uniqid();
+$nom = ucfirst($_GET["nom"]);
+$prenom = ucfirst($_GET["prenom"]);
+$nombre = $_GET["nombre"];
+$adresse = $_GET["adresse"];
+$cin = $_GET["cin"];
 $remise = 0;
+$prix_total = $nombre * 4;
 $prix_final = $prix_total;
 if ($nombre > 10) {
     $remise = $prix_total * 0.1;
