@@ -22,13 +22,15 @@
             <div>
                 <fieldset>
                     <legend>Votre avis compte:</legend>
-                    <div class="custom-control custom-radio"><input type="radio" id="bon" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Bon</label></div>
-                    <div class="custom-control custom-radio"><input type="radio" id="moyen" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Moyen</label></div>
-                    <div class="custom-control custom-radio"><input type="radio" id="mauvais" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="customRadio1">Mauvais</label></div>
+                    <div class="sondage"><input type="radio" value="bon" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="bon">Bon</label></div>
+                    <div class="sondage"><input type="radio" value="moyen" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="moyen">Moyen</label></div>
+                    <div class="sondage"><input type="radio" value="mauvais" class="custom-control-input" name="customRadio" checked=""><label class="form-label custom-control-label" for="mauvais">Mauvais</label></div>
                 </fieldset>
                 <fieldset></fieldset>
             </div>
-            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" value="Ajouter">Soumettre</button></div><a class="forgot" href="#">Le PHP, c'est dûr.</a>
+            <div class="mb-3">
+                <input name="submit" value="Submit" type="submit" />
+                <button class="btn btn-primary d-block w-100" type="submit" value="Ajouter">Soumettre</button></div><a class="forgot" href="#">Le PHP, c'est dûr.</a>
         </form>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
